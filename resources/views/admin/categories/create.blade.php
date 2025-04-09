@@ -28,10 +28,16 @@
                 <div class="row">
                     <div class = "col-12" style="font-size: larger">
                     </div>
-                    <form class="col-3" action="#">
+                    <form class="col-3" action="{{route('admin.category.store')}}" method = "POST">
+                        @csrf
                         <div class="form-group">
                             <label>Category: </label>
-                            <input type="text" class="form-control"  placeholder="Enter category name">
+                            <input type="text" name="title" class="form-control"  placeholder="Enter category name">
+                            @error('title')
+                            <div class="text-danger">
+                                You should type 'title' input! {{$message}}
+                            </div>
+                            @enderror
                         </div>
                         <input type="submit" class="btn btn-primary" value="Add">
                     </form>
