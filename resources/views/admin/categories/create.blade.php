@@ -35,7 +35,7 @@
                             <input type="text" name="title" class="form-control"  placeholder="Enter category name">
                             @error('title')
                             <div class="text-danger">
-                                You should type 'title' input! {{$message}}
+                                {{$message}}
                             </div>
                             @enderror
                         </div>
