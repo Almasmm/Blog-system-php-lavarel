@@ -7,10 +7,11 @@
         <div class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0">{{$category->title}}</h1>
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <h1 class="mt-2 m-0 mr-2">{{$category->title}}</h1>
+                        <a class="mt-3 text-success"   href="{{route('admin.category.edit', $category->id)}}"><i class="fa-solid fa-pen"></i></a>
                     </div><!-- /.col -->
-                    <div class="col-sm-6">
+                    <div class="col-sm-6">oooooooooo
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <li class="breadcrumb-item active">Categories</li>
@@ -35,14 +36,14 @@
                             <div class="card-body table-responsive p-0">
                                 <table class="table table-hover text-nowrap">
                                     <tbody>
-                                        <tr>
-                                            <td>ID</td>
-                                            <td>{{$category -> id}}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Name</td>
-                                            <td>{{$category -> title}}</td>
-                                        </tr>
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>{{$category -> id}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>{{$category -> title}}</td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
