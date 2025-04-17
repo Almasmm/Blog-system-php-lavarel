@@ -7,9 +7,17 @@
         <ul class="p-3 nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
                 <a href="{{route('admin.category.index')}}" class="nav-link">
-                    <i class="fas fa-th-list"> </i>
+                    <i class="nav-icon fas fa-th-list"> </i>
                     <p>
                         Categories
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{route('admin.tag.index')}}" class="nav-link">
+                    <i class="nav-icon fa-solid fa-tags"></i>
+                    <p>
+                        Tags
                     </p>
                 </a>
             </li>

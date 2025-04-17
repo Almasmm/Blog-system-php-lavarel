@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (Schema::hasColumn('categories', 'post_id')) {
-            Schema::table('categories', function (Blueprint $table) {
+        if (Schema::hasColumn('category', 'post_id')) {
+            Schema::table('category', function (Blueprint $table) {
                 $table->dropColumn('post_id');
             });
         }
@@ -23,7 +23,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('categories', function (Blueprint $table) {
+        Schema::table('category', function (Blueprint $table) {
             $table->unsignedInteger('post_id')->nullable();
         });
     }
