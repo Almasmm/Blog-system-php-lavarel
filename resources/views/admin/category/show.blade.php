@@ -9,7 +9,7 @@
                 <div class="row mb-2">
                     <div class="col-sm-6 d-flex align-items-center">
                         <h1 class="mt-2 m-0 mr-2">{{$category->title}}</h1>
-                        <a class="mt-3 mr-2 text-gray-dark" href="{{route('admin.tag.index')}}"><i
+                        <a class="mt-3 mr-2 text-gray-dark" href="{{route('admin.category.index')}}"><i
                                 class="fa-solid fa-backward"></i></a>
 
                         <a class="mt-3 mr-1 text-success" href="{{route('admin.category.edit', $category->id)}}"><i
